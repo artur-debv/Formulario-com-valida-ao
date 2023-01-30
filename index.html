@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Create Account</h1>
+        <div class="social-media">
+            <a href="#">
+                <img src="assets/google.png" alt="Google">
+            </a>
+            <a href="#">
+                <img src="assets/fecebook.png" alt="Facebook">
+            </a>
+            <a href="#">
+                <img src="assets/linkedin.png" alt="Linkedin">
+            </a>
+        </div>
+        <div class="alternative">
+            <span>OR</span>
+        </div>
+        <form action="" id="form">
+            <label for="name">
+                <input type="text"  class="inputs required  " placeholder="digite seu nome" oninput="validaçao()" >
+                <span class="span-required">nome deve ter 3 caracteres</span>
+            </label>
+            <label for="email">
+                <input type="email"  name="email" class="inputs required" placeholder="digite sua melhor email" oninput="emailvalidaçao ()">
+                <span  class="span-required">digite um email valido</span>
+            </label>
+            <label for="password">
+                <input type="password"  name="senha" class="inputs required" placeholder="digite sua senha " oninput="senhavalidaçao ()">
+                <span  class="span-required">digite uma senha no minimo 8 caracteres</span>
+            </label>
+            <div class="buttons">
+            <input type="submit" value="Sign Up" id="button" onclick="valida_form ()" onclick ='logar ()' >
+            <input type="submit" class="btn"  value="limpar dados" onclick="limparformulario ()">
+        </div>
+        </form>
+        
+    </main>
+    <section class="images">
+        <img src="assets/mobile.svg" alt="Mobile">
+        <div class="circle"></div>
+    </section>
+
+    <script src="index.js"></script>
+
+
+
+</body>
+</html>
